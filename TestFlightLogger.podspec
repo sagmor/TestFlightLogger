@@ -1,0 +1,12 @@
+Pod::Spec.new do |s|
+  s.name         = "TestFlightLogger"
+  s.version      = "0.0.1"
+  s.summary      = "A CocoaLumberjack logger for TestFlight."
+  s.license      = 'MIT'
+  s.author       = { "Alex Billingsley" => "abillingsley@dyknow.com" }
+  s.source   	 = { :git => 'https://github.com/abillingsley/TestFlightLogger.git', :tag => '0.0.1' }  	
+  s.source_files = '*.{h,m}'
+  s.requires_arc = true
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'TestFlight'
+end
