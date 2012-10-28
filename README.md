@@ -15,7 +15,7 @@ A CocoaLumberjack logger for TestFlight
     [TestFlight takeOff:@"your_team_token"];
     [DDLog addLogger:[TestFlightLogger sharedInstance]];
 
-    DDLog("My First Log Message to TestFlight");
+    DDLog(@"My First Log Message to TestFlight");
 }
 
 ```
