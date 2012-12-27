@@ -67,8 +67,8 @@ static TestFlightLogger *sharedInstance;
 {
     NSString *logMsg = logMessage->logMsg;
     
-    if (self.logFormatter)
-        logMsg = [self.logFormatter formatLogMessage:logMessage];
+    if (formatter)
+        logMsg = [formatter formatLogMessage:logMessage];
     
     if (logMsg)
     {
